@@ -1,5 +1,10 @@
 @import "tailwindcss";
+/* Optional global CSS fallback */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough&display=swap');
 
+body {
+  font-family: 'Winky Rough', cursive;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
