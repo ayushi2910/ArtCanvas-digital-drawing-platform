@@ -418,7 +418,7 @@ export default function ArtCanvas() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Head>
         <title>Digital Art Canvas</title>
-        <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+        
       </Head>
 
       {/* Navbar of  ArtCanvas Website */}
