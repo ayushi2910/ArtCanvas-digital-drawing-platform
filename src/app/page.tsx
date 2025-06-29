@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -39,13 +39,11 @@ export default function ArtCanvas() {
   const [showLayersPanel, setShowLayersPanel] = useState<boolean>(true);
   const [showColorPanel, setShowColorPanel] = useState<boolean>(true);
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
-  const [fileName, setFileName] = useState('my-artwork');
-  
+  const [fileName] = useState('my-artwork');
   const canvasRef = useRef<HTMLDivElement>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Get active layer
-  const getActiveLayer = () => layers.find(layer => layer.id === activeLayer) || layers[0];
+
+
 
   // Add element to active layer
   const addElement = (element: DrawingElement) => {
